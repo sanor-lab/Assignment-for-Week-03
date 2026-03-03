@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Responsive Layout Assignment</title>
+  <title>Hamburger Mai Ja</title>
 
   <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
@@ -16,96 +16,140 @@
 
 <body>
 
-  <!-- NAVBAR -->
-  <header>
-    <div class="nav-container">
-      <div class="logo">HMJ</div>
+<!-- NAVBAR -->
+<header>
+  <div class="nav-container">
+    <div class="logo">HMJ</div>
 
-      <!-- Checkbox Hack -->
-      <input type="checkbox" id="menu-toggle">
-      <label for="menu-toggle" class="hamburger">
-        <i class="fas fa-bars"></i>
-      </label>
+    <input type="checkbox" id="menu-toggle">
+    <label for="menu-toggle" class="hamburger">
+      <i class="fas fa-bars"></i>
+    </label>
 
-      <nav>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Menu</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Menu</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
 
-  <!-- main hamburg -->
-  <section class="mainhamburg">
-    <h1>Hamburger Mai Ja</h1>
-    <p>This the heaven of the hunger at Hamburger Mai Ja. </p>
-    <p>The burgers are made to order, the fries are hand-cut,</p>
-    <p>the toppings are prepared fresh each morning, and the shakes are the highest quality. </p>
-    <button>Start Your Order</button>
-  </section>
+<!-- HERO  -->
+<section class="mainhamburg">
+  <h1>Hamburger Mai Ja</h1>
+  <p>This is the heaven of hunger at Hamburger Mai Ja.</p>
+  <p>The burgers are made to order, fries are hand-cut, toppings prepared fresh, and shakes are premium quality.</p>
+  <button>Start Your Order</button>
+</section>
 
-  <!-- 3 CARDS ja -->
-  <section class="cards-section">
-    <div class="cards">
-      <div class="card">
-        <i class="fas fa-image"></i>
-        <h3>Have you tried our Patty Melt?</h3>
-        <p>Inspired by a popular menu hack,
-        the Five Guys Patty Melt is available everywhere! What toppings are you adding to yours? </p>
+<!--  PROMO GALLERY (3 CARDS)-->
+<section>
+  <div class="promo-gallery">
+
+    <div class="promo-item">
+      <img src="images/patty.jpg" >
+      <div class="promo-content">
+        <h3>Patty Melt</h3>
+        <p>Juicy beef with melted cheese and grilled onions.</p>
+        <button>Order Now</button>
       </div>
+    </div>
 
-      <div class="card">
-        <i class="fas fa-image"></i>
+    <div class="promo-item">
+      <img src="images/store.jpg" >
+      <div class="promo-content">
         <h3>Find A Store</h3>
-        <p>Locate a Five Guys near you and start an order.</p>
+        <p>Locate your nearest branch today.</p>
+        <button>Find Now</button>
       </div>
+    </div>
 
-      <div class="card">
-        <i class="fas fa-image"></i>
+    <div class="promo-item">
+      <img src="images/group.jpg" >
+      <div class="promo-content">
         <h3>Feeding A Group?</h3>
-        <p>We have got you. With catering from Five Guys, 
-        everyone gets what they really want and you get all the glory.</p>
-      </div>
-  </section>
-
-  <!-- GREY TEXT SECTION -->
-  <section class="info-section">
-    <p>
-      Step into any HMJ and you will notice we are serious about our tunes. From our Featured Artists to staff-curated Spotify playlists, 
-      this is where we nerd out about music.
-    </p>
-  </section>
-
-  <!-- 4 IMAGE GRID -->
-  <section class="gallery">
-    <div class="gallery-grid">
-      <div class="box"><i class="fas fa-image"></i></div>
-      <div class="box"><i class="fas fa-image"></i></div>
-      <div class="box"><i class="fas fa-image"></i></div>
-      <div class="box"><i class="fas fa-image"></i></div>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
-  <footer>
-    <div class="footer-container">
-      <div>
-        <h4>Heading</h4>
-        <p>Link 1</p>
-        <p>Link 2</p>
-        <p>Link 3</p>
-      </div>
-
-      <div>
-        <h4>Heading</h4>
-        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Perfect combo deals for friends & family.</p>
+        <button>View Deals</button>
       </div>
     </div>
-    <p class="copyright">Copyright 2026</p>
-  </footer>
+
+  </div>
+</section>
+
+<!-- INFO SECTION -->
+<section class="info-section">
+  <p>
+    Step into any HMJ and you will notice we are serious about our tunes.
+    From featured artists to staff-curated playlists.
+  </p>
+
+  <a href="https://open.spotify.com/user/xhjybu9z8yg6jucgxua7dhmqo" target="_blank">
+    <button>Listen on Spotify</button>
+  </a>
+</section>
+
+<!--  CATEGORY CARDS (4 CARDS) -->
+<section>
+  <div class="gallery-grid">
+
+    <div class="gallery-item">
+      <i class="fas fa-hamburger"></i>
+      <h3>Hamburger</h3>
+    </div>
+
+    <div class="gallery-item">
+      <i class="fas fa-utensils"></i>
+      <h3>Fries</h3>
+    </div>
+
+    <div class="gallery-item">
+      <i class="fas fa-leaf"></i>
+      <h3>Toppings</h3>
+    </div>
+
+    <div class="gallery-item">
+      <i class="fas fa-glass-martini-alt"></i>
+      <h3>Drinks</h3>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+
+  <div class="footer-container">
+
+    <!-- LEFT -->
+    <div class="footer-left">
+      <h4>Contact Us</h4>
+      <p><a href="#">News & Stories</a></p>
+      <p><a href="#">Gift Cards</a></p>
+      <p><a href="#contact">FAQs</a></p>
+    </div>
+
+    <!-- CENTER -->
+    <div class="footer-center">
+      <h4>Customer Support</h4>
+      <p>Customer Feedback Hotline</p>
+      <p>+66 1103206100 (8AM–12AM)</p>
+    </div>
+
+    <!-- RIGHT -->
+    <div class="footer-right">
+      <h4>Location</h4>
+      <p>Hat Yai, Songkhla, Thailand</p>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    Copyright © 2026 Hamburger Mai Ja, All rights reserved.
+  </div>
+
+</footer>
 
 </body>
 </html>
