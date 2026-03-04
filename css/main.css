@@ -25,7 +25,7 @@ p {
   margin-bottom: 10px;
 }
 
-button {
+/* all*/button {
   padding: 10px 20px;
   border: none;
   background: #D21033;
@@ -33,8 +33,8 @@ button {
   border-radius: 6px;
   cursor: pointer;
   transition: 0.3s ease;
+  font-family: 'Poppins';
 }
-
 button:hover {
   background: #5b0716;
 }
@@ -43,9 +43,8 @@ button:hover {
 header {
   background: #111;
   color: white;
-  padding: 15px 20px;
+  padding: 3px 3px;
 }
-
 .nav-container {
   display: flex;
   justify-content: space-between;
@@ -54,21 +53,35 @@ header {
   max-width: 1200px;
   margin: 0 auto;
 }
-
 .logo {
   font-weight: 600;
   font-size: 1.2rem;
+  cursor: pointer;
 }
-
 #menu-toggle {
   display: none;
 }
-
 .hamburger {
   font-size: 1.6rem;
   cursor: pointer;
 }
+/* ซ่อน checkbox */
+#menu-toggle {
+  display: none;
+}
 
+/* ปุ่ม bars */
+.bars {
+  display: none;
+  position: absolute;
+  right: 16px;
+  top: 16px;
+  font-size: 24px;
+  cursor: pointer;
+  color: white;
+}
+
+/* เมนู */
 nav ul {
   list-style: none;
   position: absolute;
@@ -89,7 +102,6 @@ nav ul li {
 nav ul li a {
   display: block;
   padding: 10px 14px;
-  background: #D21033;
   border-radius: 8px;
   color: white;
   text-decoration: none;
@@ -100,23 +112,47 @@ nav ul li a:hover {
   background: #d210345f;
 }
 
+/*  checkbox to show menu na*/
+#menu-toggle:checked ~ nav ul {
+  display: flex;
+}
+/* show bar derr*/
+@media (max-width: 768px) {
+  .bars {
+    display: block;
+  }
+}
 #menu-toggle:checked ~ nav ul {
   display: flex;
 }
 
 /* HERO*/
 .mainhamburg {
-  background: linear-gradient(to right, #222, #444);
-  color: white;
+    position: relative;
+    overflow: hidden;
 }
 
-.mainhamburg p {
-  max-width: 600px;
-  margin: 0 auto 20px;
+.mainhamburg video {
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 95%;
+    object-fit: cover;
+    z-index: -1; 
 }
 
-/* PROMO GALLERY*/
-.promo-gallery {
+.mainhamburg h1,
+.mainhamburg p,
+.mainhamburg button {
+    position: relative;
+    z-index: 2; 
+    color: #fff;
+}
+
+/* GALLERY*/
+.gallery {
   max-width: 1200px;
   margin: 0 auto;
   display: grid;
@@ -124,35 +160,33 @@ nav ul li a:hover {
   gap: 40px;
 }
 
-.promo-item {
+.patty {
   background: #fff;
   border-radius: 16px;
   overflow: hidden;
   box-shadow: 0 10px 30px rgba(0,0,0,0.08);
   display: flex;
   flex-direction: column;
-}
+} 
 
-
-
-.promo-item img {
+.patty img {
   width: 100%;
   height: 260px;
   object-fit: cover;
 }
 
-.promo-content {
+.content {
   padding: 30px;
   text-align: left;
 }
 
-.promo-content h3 {
+.content h3 {
   margin-bottom: 12px;
 }
 
-.promo-content p {
+.content p {
   color: #555;
-  margin-bottom: 20px;
+  margin-bottom: 12px;
 }
 
 /* INFO SECTION */
@@ -248,7 +282,7 @@ footer a:hover {
     margin-left: 20px;
   }
 
-  .promo-gallery {
+  .gallery {
     grid-template-columns: repeat(3, 1fr);
   }
 
